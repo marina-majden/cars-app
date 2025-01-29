@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A CRUD application for managing vehicle makes (BMW, Ford) and models (X5, Focus).  
+A CRUD application for managing vehicle makes (BMW, Ford, etc.) and models (X5, Focus, etc).  
 **Features**: Pagination, sorting, filtering via API, form validation, and MobX state management.
 
 ## Tech Stack
@@ -15,12 +15,20 @@ A CRUD application for managing vehicle makes (BMW, Ford) and models (X5, Focus)
 **Routing**: React Router
 **HTTP Client**: Axios
 
+## git Commit Strategy
+
+**build:** add BaseService and BaseStore
+**feat:** implement VehicleMake list page with pagination
+**fix:** resolve Firestore pagination logic
+**style:** apply Material-UI theme
+**docs:** update README with setup steps
+
 ## Process
 
 1. Installed React Vite and dependencies.
    npm create vite@latest
    npm install
-2. Arranged project structure:
+2. Structured project fo start in this way:
    cars-app
    ├── node_modules
    ├── public
@@ -49,3 +57,8 @@ A CRUD application for managing vehicle makes (BMW, Ford) and models (X5, Focus)
    ├── package.json
    ├── readme.md
    └── vite.config.js
+3. Installed Firebase, MobX, axios, React Router and Material UI in the project.
+   npm install firebase
+   npm install @mui/x-data-grid @mui/material
+   npm install mobx mobx-react-litemobx-react-form
+   npm install axios
